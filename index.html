@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Dashboard educativo de Multimédia com questionário, glossário e calculadora de resolução de imagem.">
+
+    <title>Multimédia Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-content">
+
+            <a href="#" class="brand">
+                <span class="brand-icon">M</span>
+                <span>Multimédia Dashboard</span>
+            </a>
+
+            <div class="nav-info">
+                <span class="status-dot"></span>
+                Projeto Escolar
+            </div>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- INTRODUÇÃO -->
+        <section class="hero">
+
+            <div class="eyebrow">
+                OFICINA DE MULTIMÉDIA
+                <span>/</span>
+                12.º ANO
+            </div>
+
+            <h1>Explora o mundo da Multimédia.</h1>
+
+            <p>
+                Uma plataforma interativa para testar conhecimentos,
+                descobrir conceitos e explorar características de
+                conteúdos digitais.
+            </p>
+
+        </section>
+
+        <!-- WIDGETS -->
+        <section class="dashboard">
+
+            <!-- WIDGET 1: QUESTIONÁRIO -->
+            <article class="widget quiz-widget">
+
+                <div class="widget-header">
+                    <div class="widget-heading">
+                        <span class="widget-icon blue-icon">✎</span>
+                        <div>
+                            <span class="widget-category">APRENDIZAGEM</span>
+                            <h2>Multimédia Quiz</h2>
+                        </div>
+                    </div>
+
+                    <span class="widget-tag">12 perguntas</span>
+                </div>
+
+                <p class="widget-description">
+                    Testa os teus conhecimentos sobre imagem, áudio,
+                    vídeo, animação e tecnologias digitais.
+                </p>
+
+                <div id="quiz-intro" class="quiz-intro">
+                    <div class="quiz-info">
+                        <div>
+                            <strong>12</strong>
+                            <span>Perguntas</span>
+                        </div>
+
+                        <div>
+                            <strong>4</strong>
+                            <span>Opções</span>
+                        </div>
+
+                        <div>
+                            <strong>1</strong>
+                            <span>Resposta certa</span>
+                        </div>
+                    </div>
+
+                    <button id="start-quiz" class="primary-button">
+                        Começar questionário →
+                    </button>
+                </div>
+
+                <div id="quiz-content" class="hidden">
+
+                    <div class="quiz-progress-info">
+                        <span id="question-counter">Pergunta 1 / 12</span>
+                        <span id="progress-text">0%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div id="progress-fill"></div>
+                    </div>
+
+                    <span class="question-number" id="question-number">
+                        PERGUNTA 01
+                    </span>
+
+                    <h3 id="question-text"></h3>
+
+                    <div id="options" class="options"></div>
+
+                    <p id="feedback" class="feedback"></p>
+
+                    <button id="next-button" class="primary-button" disabled>
+                        Próxima pergunta →
+                    </button>
+
+                </div>
+
+                <div id="quiz-results" class="hidden">
+
+                    <div class="result-icon" id="result-icon">🏆</div>
+
+                    <h3 id="result-title">Questionário concluído!</h3>
+
+                    <div class="score">
+                        <span id="final-score">0</span>
+                        <span class="score-total">/ 12</span>
+                    </div>
+
+                    <p id="result-description"></p>
+
+                    <div class="result-details">
+                        <div>
+                            <strong id="correct-count">0</strong>
+                            <span>Corretas</span>
+                        </div>
+
+                        <div>
+                            <strong id="wrong-count">0</strong>
+                            <span>Incorretas</span>
+                        </div>
+
+                        <div>
+                            <strong id="percentage">0%</strong>
+                            <span>Resultado</span>
+                        </div>
+                    </div>
+
+                    <button id="restart-quiz" class="primary-button">
+                        ↻ Repetir questionário
+                    </button>
+
+                </div>
+
+            </article>
+
+            <!-- WIDGET 2: GLOSSÁRIO -->
+            <article class="widget wiki-widget">
+
+                <div class="widget-header">
+
+                    <div class="widget-heading">
+                        <span class="widget-icon purple-icon">▤</span>
+
+                        <div>
+                            <span class="widget-category">CONHECIMENTO</span>
+                            <h2>Multimédia Wiki</h2>
+                        </div>
+                    </div>
+
+                    <span class="widget-tag">Glossário</span>
+
+                </div>
+
+                <p class="widget-description">
+                    Descobre conceitos e definições importantes
+                    relacionados com a área da Multimédia.
+                </p>
+
+                <label for="wiki-search" class="search-label">
+                    Pesquisar conceito
+                </label>
+
+                <div class="search-box">
+                    <span>⌕</span>
+
+                    <input
+                        type="search"
+                        id="wiki-search"
+                        placeholder="Ex.: Pixel, RGB, Codec..."
+                    >
+                </div>
+
+                <div class="wiki-categories">
+                    <button class="category-button active" data-category="Todos">
+                        Todos
+                    </button>
+
+                    <button class="category-button" data-category="Imagem">
+                        Imagem
+                    </button>
+
+                    <button class="category-button" data-category="Áudio">
+                        Áudio
+                    </button>
+
+                    <button class="category-button" data-category="Vídeo">
+                        Vídeo
+                    </button>
+
+                    <button class="category-button" data-category="Web">
+                        Web
+                    </button>
+                </div>
+
+                <div id="wiki-list" class="wiki-list"></div>
+
+                <p id="wiki-count" class="widget-footnote"></p>
+
+            </article>
+
+            <!-- WIDGET 3: CALCULADORA -->
+            <article class="widget calculator-widget">
+
+                <div class="widget-header">
+
+                    <div class="widget-heading">
+                        <span class="widget-icon orange-icon">▦</span>
+
+                        <div>
+                            <span class="widget-category">FERRAMENTAS</span>
+                            <h2>Pixel Calculator</h2>
+                        </div>
+                    </div>
+
+                    <span class="widget-tag">Imagem digital</span>
+
+                </div>
+
+                <p class="widget-description">
+                    Calcula a resolução, o número de píxeis e a
+                    proporção de uma imagem digital.
+                </p>
+
+                <div class="calculator-inputs">
+
+                    <div class="input-group">
+                        <label for="image-width">Largura (px)</label>
+
+                        <input
+                            type="number"
+                            id="image-width"
+                            min="1"
+                            max="100000"
+                            value="1920"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="image-height">Altura (px)</label>
+
+                        <input
+                            type="number"
+                            id="image-height"
+                            min="1"
+                            max="100000"
+                            value="1080"
+                        >
+                    </div>
+
+                </div>
+
+                <button id="calculate-button" class="primary-button">
+                    Calcular resolução →
+                </button>
+
+                <div id="calculator-results" class="calculator-results">
+
+                    <span class="result-label">RESULTADOS</span>
+
+                    <div class="calculator-result-row">
+                        <span>Resolução</span>
+                        <strong id="resolution-result">1920 × 1080</strong>
+                    </div>
+
+                    <div class="calculator-result-row">
+                        <span>Total de píxeis</span>
+                        <strong id="pixel-result">2 073 600</strong>
+                    </div>
+
+                    <div class="calculator-result-row">
+                        <span>Megapíxeis</span>
+                        <strong id="megapixel-result">2.07 MP</strong>
+                    </div>
+
+                    <div class="calculator-result-row">
+                        <span>Proporção</span>
+                        <strong id="ratio-result">16:9</strong>
+                    </div>
+
+                    <div class="ratio-preview">
+                        <div id="ratio-shape"></div>
+                    </div>
+
+                </div>
+
+                <p id="calculator-error" class="feedback"></p>
+
+            </article>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                Desenvolvido no âmbito da disciplina de
+                Oficina de Multimédia · 2026/2027
+            </p>
+
+            <p class="footer-small">
+                Multimédia Dashboard · Projeto educativo
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
