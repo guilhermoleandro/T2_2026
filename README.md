@@ -24,24 +24,14 @@ As funcionalidades foram desenvolvidas para este projeto com apoio da IA, não s
 
 ## 3. Registo de Utilização da IA
 
-Foi utilizado o Copilot como apoio à implementação, depuração e melhoria visual do projeto.
-
-Prompt:
-Quero que desenvolvas de raiz uma aplicação Web chamada Multimédia Dashboard, no âmbito da disciplina de Oficina de Multimédia do 12.º ano. A aplicação deve funcionar como um dashboard educativo, permitindo aos utilizadores testar conhecimentos e explorar conceitos relacionados com imagem, áudio, vídeo, animação e tecnologias digitais.
-
-A aplicação deve ter um design moderno e profissional, com um tema escuro, inspirado em dashboards tecnológicos. Utiliza cores como azul, roxo e laranja para distinguir as diferentes funcionalidades. A interface deve ser intuitiva, com cartões de cantos arredondados, bordas discretas, sombras suaves e pequenas animações. Deve também ser totalmente responsiva, adaptando-se a computadores, tablets e telemóveis.
-
-Na parte superior da página, cria uma barra de navegação com o nome "Multimédia Dashboard", um ícone com a letra M e uma indicação de que se trata de um projeto escolar. Abaixo, adiciona uma secção de apresentação com o título "Explora o mundo da Multimédia.", uma breve descrição da plataforma e a identificação da disciplina e do ano escolar.
-
-A área principal deve estar organizada em três widgets. O primeiro deve chamar-se "Multimédia Quiz" e consistir num questionário interativo com exatamente 12 perguntas de escolha múltipla sobre multimédia, imagem digital, formatos de imagem, áudio, vídeo, animação e tecnologias Web. Cada pergunta deve apresentar quatro opções de resposta, sendo apenas uma correta. O questionário deve apresentar uma introdução com o número de perguntas, opções e respostas certas, um botão para começar e, depois, apresentar uma pergunta de cada vez. Deve impedir que o utilizador selecione mais do que uma resposta por pergunta, destacar a resposta correta a verde e a resposta errada a vermelho e apresentar uma explicação após cada resposta. Inclui uma barra de progresso, um indicador da pergunta atual e um botão para avançar. No final, apresenta a pontuação, o número de respostas certas e erradas, a percentagem de sucesso e uma mensagem de avaliação consoante o resultado. Deve também existir uma opção para repetir o questionário.
-
-O segundo widget deve chamar-se "Multimédia Wiki" e funcionar como um glossário interativo de conceitos relacionados com multimédia. Organiza os conceitos nas categorias Imagem, Áudio, Vídeo e Web. Inclui termos como Píxel, RGB, PNG, JPEG, Imagem vetorial, MP3, WAV, Codec, FPS, Streaming, HTML, CSS e JavaScript. Cada conceito deve aparecer num cartão com o respetivo nome, categoria e definição. Adiciona uma barra de pesquisa em tempo real, botões para filtrar os conceitos por categoria e uma opção "Todos" para apresentar todos os resultados. Os cartões devem permitir expandir e recolher as definições. A pesquisa deve ignorar diferenças entre letras maiúsculas, minúsculas e acentos, de modo que pesquisar "pixel" também encontre "Píxel". Apresenta ainda o número de conceitos encontrados. Dá especial atenção ao aspeto visual desta secção, utilizando cartões organizados em grelha, categorias destacadas e animações discretas.
-
-O terceiro widget deve chamar-se "Pixel Calculator" e funcionar como uma calculadora de resolução de imagem digital. Deve permitir introduzir a largura e a altura de uma imagem em píxeis e calcular automaticamente a resolução, o número total de píxeis, os megapíxeis e a proporção da imagem. Por exemplo, para uma imagem de 1920 × 1080 píxeis, deve apresentar 2 073 600 píxeis, 2,07 MP e uma proporção de 16:9. Inclui também uma representação visual da proporção da imagem através de um retângulo que se adapte às dimensões introduzidas. A calculadora deve aceitar apenas números inteiros entre 1 e 100000 e apresentar mensagens de erro claras quando os valores forem inválidos.
-
-Organiza o projeto em três ficheiros: index.html, responsável pela estrutura da página; style.css, responsável pelo design, cores, animações e responsividade; e script.js, responsável pela lógica e interatividade dos três widgets. Utiliza HTML5, CSS3 e JavaScript, sem recorrer a frameworks desnecessários.
-
-Garante que a aplicação funciona diretamente ao abrir o ficheiro index.html num navegador, sem necessitar de servidor ou instalação de dependências. Todos os botões devem funcionar corretamente, não devem existir erros na consola e a interface deve manter uma aparência consistente em todas as secções. Cria os três ficheiros completos, com código organizado e funcional, deixando a aplicação pronta a utilizar e adequada à apresentação de um projeto escolar de Multimédia do 12.º ano.
+1. Prompt para conversão Web/HTML:
+   ``
+   Converte o projeto numa aplicação Web utilizando HTML5, CSS3 e JavaScript, mantendo as funcionalidades existentes. Organiza o código em ficheiros separados, garantindo uma estrutura simples, organizada e responsiva. Cria uma interface moderna para o Multimédia Dashboard, com acesso às secções Quiz, Wiki e Pixel Calculator, garantindo que funciona corretamente no navegador.
+   ``
+3. Prompt para ampliação e construção de funcionalidades
+4. Dificuldades e erros corrigidos com a IA
+5. Otimização de Layout: O que sugeriste à IA para alterar no design - cores,
+margens, fontes, botões?
 
 ## 4. Estrutura de Ficheiros do Repositório
 
