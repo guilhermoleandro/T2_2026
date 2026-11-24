@@ -28,10 +28,15 @@ As funcionalidades foram desenvolvidas para este projeto com apoio da IA, não s
    ``
    Converte o projeto numa aplicação Web utilizando HTML5, CSS3 e JavaScript, mantendo as funcionalidades existentes. Organiza o código em ficheiros separados, garantindo uma estrutura simples, organizada e responsiva. Cria uma interface moderna para o Multimédia Dashboard, com acesso às secções Quiz, Wiki e Pixel Calculator, garantindo que funciona corretamente no navegador.
    ``
-3. Prompt para ampliação e construção de funcionalidades
-4. Dificuldades e erros corrigidos com a IA
-5. Otimização de Layout: O que sugeriste à IA para alterar no design - cores,
-margens, fontes, botões?
+3. Prompt para ampliação e construção de funcionalidades:
+``
+   Desenvolve e melhora as funcionalidades do Multimédia Dashboard, incluindo um Quiz com 12 perguntas e pontuação final, uma Wiki com pesquisa e filtros por categorias e uma Pixel Calculator que calcula píxeis, megapíxeis e proporções. Garante que os botões, pesquisas, filtros e cálculos funcionam corretamente e que todas as funcionalidades estão integradas.
+``
+4. Otimização de Layout: O que sugeriste à IA para alterar no design - cores,
+margens, fontes, botões?:
+``
+   Melhora o design do Multimédia Dashboard, mantendo um tema escuro com apontamentos de azul, roxo e laranja. Ajusta as margens, os espaçamentos, as fontes e os cartões para tornar a interface mais organizada. Melhora os botões com cantos arredondados e efeitos hover, garantindo uma apresentação moderna, consistente e adaptável a diferentes tamanhos de ecrã.
+``
 
 ## 4. Estrutura de Ficheiros do Repositório
 
